@@ -1,0 +1,108 @@
+.contenedor-cerem-recep {
+  position: relative;
+  //text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 40px 0px;
+}
+
+.colum-cerm {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.colum-recep {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.textosec {
+  font-family: "Cormorant", serif;
+  color: #53582f;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.hora {
+  font-family: "Cormorant", serif;
+  color: #53582f;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: normal;
+}
+
+.titulop {
+  font-family: 'Cormorant Garamond', serif;
+  align-items: last baseline;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.7;
+  color: #53582f;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.titulo-cerm-recep {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  color: #809eae;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.cerm-recep-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  background-color: #53582f;
+  color: #f3ead8;
+  border: 1px solid #53582f;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(83, 88, 47, 0.18);
+  font-family: "Cormorant", serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #414624;
+    border-color: #414624;
+    color: #f3ead8;
+    box-shadow: 0 6px 16px rgba(83, 88, 47, 0.24);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #53582f;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.img-icon {
+  width: 25%;
+  margin-bottom: 5%;
+}

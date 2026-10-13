@@ -1,0 +1,153 @@
+.contenedor-dress-code{
+  position: relative;
+  text-align: center;
+}
+
+.colum-dress-code{
+  background-color: #53582f;
+  color: #f3ead8;
+  padding: 5px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.textosec{
+  color: #f3ead8;
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.img-1 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-1 {
+    display: block;
+    margin-left: 0%;
+    position: absolute;
+    width: 24%;
+    margin-top: 78%;
+  }
+}
+
+.img-2 {
+  display: none;
+}
+
+/* Muestra la imagen solo en teléfonos (máximo 768px de ancho, ajusta según lo necesario) */
+@media screen and (max-width: 500px) {
+  .img-2{
+      display: block;
+      margin-left: 75%;
+      position: absolute;
+      width: 25%;
+      margin-top: 0%;
+  }
+}
+
+.titulop{
+  font-family: "BrittanySignature";
+  text-align: right;
+  font-size: 65px;
+  line-height: 1.7;
+  color: #f3ead8;
+  margin-top: 18%;
+  margin-bottom: 5%;
+}
+
+.img-icon{
+  width: 50%;
+}
+
+.titulo-dress {
+  font-family: Carentro;
+  font-weight: bold;
+  font-size: 25px;
+  color: #f3ead8;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.dress-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  /* margin: 20px 0 4% 4%;*/
+}
+
+.dress-cont {
+  text-align: center;
+  color: #f3ead8;
+}
+
+.titulo-genero {
+  font-family: "Carentro";
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.descripcion {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 4%;
+  margin-right: 4%;
+  line-height: 1.4;
+}
+
+.btn-dress-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  background-color: #f3ead8;
+  color: #53582f;
+  border: 1px solid #f3ead8;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  letter-spacing: 1px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Carentro";
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.btn-dress-code:hover {
+  background-color: #e4d5b9;
+  border-color: #e4d5b9;
+  color: #53582f;
+  transform: translateY(-2px);
+}
+
+.btn-dress-code:focus-visible {
+  outline: 2px solid #f3ead8;
+  outline-offset: 4px;
+}
+
+.btn-dress-code:active {
+  transform: translateY(0);
+}
+
+.divisor {
+  width: 3px;
+  background-color: rgba(243, 234, 216, 0.4);
+  min-height: 100px;
+  margin-top: 10px;
+}
+
+

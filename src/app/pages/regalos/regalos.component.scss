@@ -1,0 +1,224 @@
+.contenedor-regalos {
+  position: relative;
+  text-align: center;
+}
+
+.colum-regalos {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.container-regalos {
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.textosec {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: #53582f;
+}
+
+.titulop {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1.7;
+  color: #53582f;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.numeroRegalo {
+  color: #53582f;
+  text-decoration: none;
+}
+
+.titulo-dress {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #545454;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.img-icon {
+  width: 20%;
+  margin-bottom: 7%;
+}
+
+.img-icon-reg {
+  width: 15%;
+  margin-bottom: 3%;
+}
+
+.container-reg {
+  width: 100%;
+  color: #53582f;
+}
+
+.transfer-title {
+  margin: 0;
+  font-family: "Cormorant", serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.transfer-intro {
+  margin: 4px 0 24px;
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+}
+
+.payment-card {
+  margin-top: 14px;
+  padding: 22px 16px;
+  border: 1px solid rgba(75, 104, 122, 0.18);
+  border-radius: 16px;
+  background: #f5f8fa;
+}
+
+.payment-badge {
+  display: inline-block;
+  padding: 5px 16px;
+  border-radius: 20px;
+  background: #d9c6a0;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.payment-title {
+  margin: 12px 0 16px;
+  font-family: "Cormorant", serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.payment-label {
+  margin: 0 0 6px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.payment-number {
+  margin: 12px 0 8px;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(18px, 4.5vw, 24px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+
+.payment-holder {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.payment-cci {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(75, 104, 122, 0.18);
+}
+
+.payment-number-cci {
+  margin: 0;
+  font-size: clamp(14px, 3.8vw, 19px);
+}
+
+.img-1 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-1 {
+    display: block;
+    margin-left: -50%;
+    position: absolute;
+    width: 24%;
+    margin-top: 6%;
+  }
+}
+
+/* Oculta la imagen por defecto */
+.img-2 {
+  display: none;
+}
+
+/* Muestra la imagen solo en teléfonos (máximo 768px de ancho, ajusta según lo necesario) */
+@media screen and (max-width: 500px) {
+  .img-2 {
+    display: block;
+    margin-left: 25%;
+    position: absolute;
+    width: 25%;
+    margin-top: 75%;
+  }
+}
+
+.button-regalo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  background-color: #53582f;
+  color: #f3ead8;
+  border: 1px solid #53582f;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(83, 88, 47, 0.18);
+  font-family: "Cormorant", serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #414624;
+    border-color: #414624;
+    color: #f3ead8;
+    box-shadow: 0 6px 16px rgba(83, 88, 47, 0.24);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #53582f;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+
+#collapseExample {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  padding: clamp(16px, 5vw, 28px);
+  border: 1px solid rgba(75, 104, 122, 0.15);
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(75, 104, 122, 0.08);
+}

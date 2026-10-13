@@ -1,0 +1,91 @@
+.contenedor-confir-asistencia {
+  position: relative;
+  text-align: center;
+}
+
+.colum-confir-asistencia {
+  background-color: #53582f;
+  color: #f3ead8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.contenedor-texto {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.textosec {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  margin: 0%;
+}
+
+.img-icon {
+  width: 20%;
+}
+
+.confir-asisten-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  background-color: #f3ead8;
+  color: #53582f;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 1px solid #f3ead8;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  letter-spacing: 1.5px;
+  font-family: "Cormorant", serif;
+  transition: all 0.3s ease;
+}
+
+.confir-asisten-button:hover {
+  background-color: #e4d5b9;
+  border-color: #e4d5b9;
+  color: #53582f;
+  transform: translateY(-2px);
+}
+
+.confir-asisten-button:focus-visible {
+  outline: 2px solid #f3ead8;
+  outline-offset: 4px;
+}
+
+.confir-asisten-button:active {
+  transform: translateY(0);
+}
+
+.titulop {
+  font-family: "BrittanySignature";
+  font-size: 65px;
+  line-height: 1.7;
+  color: #f3ead8;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.titulo-confir-aistencia {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #f3ead8;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.textSec {
+  font-family: "Cormorant", serif;
+  color: #f3ead8;
+  font-size: 20px;
+  margin-right: 4%;
+  margin-left: 4%;
+}
