@@ -1,26 +1,72 @@
-.contenedor-glasmmy{
-  position: relative;
-  text-align: center;
+:host {
+  display: block;
 }
 
-.colum-glasmmy{
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.creator-footer {
   max-width: 525px;
-  margin: 0px auto;
+  margin: 0 auto;
+  padding: 32px 24px calc(42px + env(safe-area-inset-bottom, 0px));
+  color: var(--wedding-olive);
+  text-align: center;
+  background: var(--wedding-yellow-soft);
 }
-#glasmmy{
-  font-family: "Cormorant", serif;
-  font-size: 16px;
-  margin-right: 0%;
-  margin-left: 0%;
 
+.creator-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 22px;
 }
-.text-glasmmy{
+
+.creator-divider span {
+  width: 58px;
+  height: 1px;
+  background: rgba(83, 88, 47, 0.24);
+}
+
+.creator-divider svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--wedding-yellow);
+}
+
+.creator-caption {
+  margin: 0 0 6px;
+  font-family: "Cormorant", serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.creator-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 4px 8px;
+  color: var(--wedding-olive);
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-decoration: none;
-  color: grey;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background: var(--wedding-yellow);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--wedding-olive);
+    outline-offset: 4px;
+  }
+}
+
+.creator-brand svg {
+  width: 17px;
+  height: 17px;
 }

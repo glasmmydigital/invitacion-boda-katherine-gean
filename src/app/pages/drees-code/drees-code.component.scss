@@ -5,9 +5,8 @@
 
 .colum-dress-code{
   background-color: #53582f;
-  color: #f3ead8;
-  padding: 5px;
-  padding-top: 40px;
+  color: var(--wedding-yellow);
+  padding: 36px 5px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +15,7 @@
 }
 
 .textosec{
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   font-family: "Cormorant", serif;
   font-size: 20px;
   margin-right: 4%;
@@ -25,54 +24,58 @@
   margin-bottom: 0%;
 }
 
-.img-1 {
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-  .img-1 {
-    display: block;
-    margin-left: 0%;
-    position: absolute;
-    width: 24%;
-    margin-top: 78%;
-  }
-}
-
-.img-2 {
-  display: none;
-}
-
-/* Muestra la imagen solo en teléfonos (máximo 768px de ancho, ajusta según lo necesario) */
-@media screen and (max-width: 500px) {
-  .img-2{
-      display: block;
-      margin-left: 75%;
-      position: absolute;
-      width: 25%;
-      margin-top: 0%;
-  }
-}
-
 .titulop{
   font-family: "BrittanySignature";
-  text-align: right;
-  font-size: 65px;
+  text-align: center;
+  font-size: var(--brittany-signature-size);
   line-height: 1.7;
-  color: #f3ead8;
-  margin-top: 18%;
-  margin-bottom: 5%;
+  color: var(--wedding-yellow);
+  margin: 0 0 12px;
+}
+
+.dress-illustration {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: clamp(220px, 60vw, 280px);
+  margin: 16px 0;
+  overflow: hidden;
+  isolation: isolate;
 }
 
 .img-icon{
-  width: 50%;
+  position: relative;
+  z-index: 1;
+  width: 46%;
+  max-width: 220px;
+}
+
+.dress-flower {
+  position: absolute;
+  bottom: -10px;
+  height: clamp(200px, 55vw, 270px);
+  width: auto;
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.dress-flower-left {
+  left: -20%;
+}
+
+.dress-flower-right {
+  right: -7%;
+  opacity: 0.85;
 }
 
 .titulo-dress {
   font-family: Carentro;
   font-weight: bold;
   font-size: 25px;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   margin: 10px 0;
   letter-spacing: 1px;
 }
@@ -88,7 +91,7 @@
 
 .dress-cont {
   text-align: center;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
 }
 
 .titulo-genero {
@@ -112,9 +115,9 @@
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  background-color: #f3ead8;
+  background-color: var(--wedding-yellow);
   color: #53582f;
-  border: 1px solid #f3ead8;
+  border: 1px solid var(--wedding-yellow);
   text-decoration: none;
   padding: 10px 22px;
   border-radius: 999px;
@@ -128,14 +131,14 @@
 }
 
 .btn-dress-code:hover {
-  background-color: #e4d5b9;
-  border-color: #e4d5b9;
+  background-color: var(--wedding-yellow-hover);
+  border-color: var(--wedding-yellow-hover);
   color: #53582f;
   transform: translateY(-2px);
 }
 
 .btn-dress-code:focus-visible {
-  outline: 2px solid #f3ead8;
+  outline: 2px solid var(--wedding-yellow);
   outline-offset: 4px;
 }
 
@@ -145,7 +148,7 @@
 
 .divisor {
   width: 3px;
-  background-color: rgba(243, 234, 216, 0.4);
+  background-color: rgba(255, 243, 183, 0.4);
   min-height: 100px;
   margin-top: 10px;
 }

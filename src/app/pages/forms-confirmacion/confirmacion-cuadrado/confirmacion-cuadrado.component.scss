@@ -79,7 +79,7 @@
   text-align: center;
   color: #fff;
   font-family: "BrittanySignature";
-  font-size: 50px;
+  font-size: var(--brittany-signature-size);
   font-weight: 300;
   font-style: italic;
   margin: 0px;
@@ -111,7 +111,7 @@
   text-align: center;
   color: #fff;
   font-family: "BrittanySignature";
-  font-size: 35px;
+  font-size: var(--brittany-signature-size);
   font-weight: 300;
   margin-top: 0;
 }
@@ -586,7 +586,7 @@ input::placeholder {/* Cambia color el texto de ejemplo dentro del input*/
 }
 
 .titulo-radio-button{
-  font-size: 50px;
+  font-size: var(--brittany-signature-size);
   margin-bottom: 1rem;
   font-family: "BrittanySignature";
   color: #fff;

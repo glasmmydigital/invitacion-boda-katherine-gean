@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   background-color: #53582f;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   align-items: center;
   max-width: 525px;
   margin: 0px auto;
@@ -31,9 +31,9 @@
 
 .titulo-kids{
   font-family: "BrittanySignature";
-  font-size: 65px;
+  font-size: var(--brittany-signature-size);
   line-height: 1.7;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   margin-top: 10%;
   margin-bottom: 5%;
 }

@@ -35,9 +35,9 @@
 }
 
 .fecha-boda{
-  font-family: Nathalia;
+  font-family: BrittanySignature;
   font-style: italic;
-  font-size: 55px;
+  font-size: var(--brittany-signature-size);
   color: #cba161;
   margin-top: 0% !important;
   margin-bottom: 0% !important;
@@ -45,8 +45,8 @@
 
 @media (max-width: 768px){
   .fecha-boda{
-    font-family: Nathalia;
-    font-size: 60px;
+    font-family: BrittanySignature;
+    font-size: var(--brittany-signature-size);
     margin-bottom: 0;
     color: #cba161;
     margin-top: 0% !important;
@@ -55,8 +55,8 @@
 }
 @media (max-width: 415px){
   .fecha-boda{
-    font-family: Nathalia;
-    font-size: 40px;
+    font-family: BrittanySignature;
+    font-size: var(--brittany-signature-size);
     margin-bottom: 0;
     color: #cba161;
     margin-top: 0% !important;

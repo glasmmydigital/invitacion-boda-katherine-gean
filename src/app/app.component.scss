@@ -15,74 +15,62 @@
 }
 
 @font-face {
-  font-family: BrittanySignature;
-  src: url("/assets/BrittanySignature.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Romantic Lovely";
   src: url("/assets/Romantic Lovely.ttf") format("truetype");
 }
 
-.clickText {
+.invitation-entry {
   position: absolute;
-  bottom: 65%;
+  bottom: calc(6% + env(safe-area-inset-bottom, 0px));
   left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 0.85rem 2rem;
-  font-family: "Playfair Display", serif;
-  font-size: 1.05rem;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: #fff;
-  text-align: center;
-  background: rgba(14, 15, 13, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(203, 161, 97, 0.55);
-  border-radius: 999px;
-  cursor: pointer;
   z-index: 20;
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
-  animation: clickTextPulse 2.2s ease-in-out infinite;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: min(82%, 310px);
+  transform: translateX(-50%);
+  text-align: center;
 }
 
-@keyframes clickTextPulse {
+.clickText {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  max-width: 100%;
+  padding: 12px;
+  border: 0;
+  color: var(--wedding-olive);
+  background: transparent;
+  font-family: "Cormorant", serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
 
-  0%,
-  100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  &::after {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.65;
+    transition: width 0.2s ease;
   }
 
-  50% {
-    opacity: 0.92;
-    transform: translateX(-50%) translateY(-5px);
-    box-shadow:
-      0 10px 32px rgba(203, 161, 97, 0.25),
-      inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  &:hover::after {
+    width: 48px;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--wedding-olive);
+    outline-offset: 5px;
   }
 }
 
-@keyframes clickLinePulse {
-
-  0%,
-  100% {
-    opacity: 0.6;
-    transform: scaleY(1);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scaleY(1.15);
+@media (prefers-reduced-motion: reduce) {
+  .clickText::after {
+    transition: none;
   }
 }
 
@@ -158,7 +146,7 @@
   align-items: center;
   justify-content: center;
   padding: 0.45rem 1rem;
-  color: #fff8ea;
+  color: var(--wedding-yellow);
   text-align: center;
   pointer-events: none;
   filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.42));
@@ -171,7 +159,7 @@
   font-style: italic;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(255, 248, 234, 0.82);
+  color: rgba(255, 243, 183, 0.82);
   text-shadow:
     0 1px 0 rgba(255, 255, 255, 0.26),
     0 3px 10px rgba(0, 0, 0, 0.5);
@@ -185,13 +173,13 @@
   font-style: italic;
   font-weight: 500;
   line-height: 1;
-  color: rgba(255, 248, 234, 0.96);
-  -webkit-text-stroke: 0.2px rgba(203, 161, 97, 0.48);
+  color: rgba(255, 243, 183, 0.96);
+  -webkit-text-stroke: 0.2px rgba(255, 243, 183, 0.48);
   text-shadow:
     0 1px 0 rgba(255, 255, 255, 0.45),
     0 2px 0 rgba(138, 101, 48, 0.46),
     0 8px 16px rgba(0, 0, 0, 0.52),
-    0 0 18px rgba(203, 161, 97, 0.28);
+    0 0 18px rgba(255, 243, 183, 0.28);
 }
 
 .stamp-seats {
@@ -203,7 +191,7 @@
   font-size: clamp(0.82rem, 3.3vw, 1.08rem);
   font-style: italic;
   font-weight: 500;
-  color: rgba(255, 248, 234, 0.9);
+  color: rgba(255, 243, 183, 0.9);
   text-shadow:
     0 1px 0 rgba(255, 255, 255, 0.28),
     0 3px 9px rgba(0, 0, 0, 0.5);
@@ -278,11 +266,11 @@
   border-radius: 50%;
   color: #ffffff;
   background:
-    linear-gradient(145deg, rgba(255, 248, 234, 0.26), rgba(92, 64, 40, 0.12)),
-    rgba(138, 101, 64, 0.9);
+    linear-gradient(145deg, rgba(255, 243, 183, 0.26), rgba(83, 88, 47, 0.12)),
+    rgba(83, 88, 47, 0.95);
   box-shadow:
-    0 14px 30px rgba(92, 64, 40, 0.28),
-    inset 0 1px 0 rgba(255, 248, 234, 0.34);
+    0 14px 30px rgba(83, 88, 47, 0.28),
+    inset 0 1px 0 rgba(255, 243, 183, 0.34);
   backdrop-filter: blur(10px) saturate(115%);
   -webkit-backdrop-filter: blur(10px) saturate(115%);
   cursor: pointer;
@@ -293,9 +281,9 @@
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.95);
   box-shadow:
-    0 18px 38px rgba(92, 64, 40, 0.34),
-    0 0 22px rgba(203, 161, 97, 0.28),
-    inset 0 1px 0 rgba(255, 248, 234, 0.42);
+    0 18px 38px rgba(83, 88, 47, 0.34),
+    0 0 22px rgba(255, 243, 183, 0.28),
+    inset 0 1px 0 rgba(255, 243, 183, 0.42);
 }
 
 .music-icon {

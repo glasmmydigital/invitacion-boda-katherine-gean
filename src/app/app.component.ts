@@ -11,7 +11,6 @@ import { ConfirAsistenComponent } from './pages/confir-asisten/confir-asisten.co
 import { DesImgComponent } from './pages/des-img/des-img.component';
 import { GlasmmyComponent } from './pages/glasmmy/glasmmy.component';
 import { GuarFechComponent } from './pages/guar-fech/guar-fech.component';
-import { ImgFloresComponent } from './pages/img-flores/img-flores.component';
 import { SegImgFloresComponent } from './pages/seg-img-flores/seg-img-flores.component';
 import { ConfirmacionCuadradoComponent } from './pages/forms-confirmacion/confirmacion-cuadrado/confirmacion-cuadrado.component';
 import { TraductorServicio } from './Services/traductor.service';
@@ -27,7 +26,6 @@ type SplashPhase = 'image' | 'video';
   imports: [
     CommonModule,
     PortadaComponent,
-    ImgFloresComponent,
     //NomPadresComponent,
     FechImgComponent,
     GuarFechComponent,

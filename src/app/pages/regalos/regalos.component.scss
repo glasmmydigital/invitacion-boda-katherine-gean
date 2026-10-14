@@ -91,8 +91,8 @@
   display: inline-block;
   padding: 5px 16px;
   border-radius: 20px;
-  background: #d9c6a0;
-  color: #fff;
+  background: var(--wedding-yellow);
+  color: var(--wedding-olive);
   font-family: "Quicksand", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -142,36 +142,6 @@
   font-size: clamp(14px, 3.8vw, 19px);
 }
 
-.img-1 {
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-  .img-1 {
-    display: block;
-    margin-left: -50%;
-    position: absolute;
-    width: 24%;
-    margin-top: 6%;
-  }
-}
-
-/* Oculta la imagen por defecto */
-.img-2 {
-  display: none;
-}
-
-/* Muestra la imagen solo en teléfonos (máximo 768px de ancho, ajusta según lo necesario) */
-@media screen and (max-width: 500px) {
-  .img-2 {
-    display: block;
-    margin-left: 25%;
-    position: absolute;
-    width: 25%;
-    margin-top: 75%;
-  }
-}
-
 .button-regalo {
   display: inline-flex;
   align-items: center;
@@ -179,7 +149,7 @@
   min-height: 48px;
   padding: 12px 28px;
   background-color: #53582f;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   border: 1px solid #53582f;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(83, 88, 47, 0.18);
@@ -194,7 +164,7 @@
   &:hover {
     background-color: #414624;
     border-color: #414624;
-    color: #f3ead8;
+    color: var(--wedding-yellow);
     box-shadow: 0 6px 16px rgba(83, 88, 47, 0.24);
     transform: translateY(-2px);
     text-decoration: none;

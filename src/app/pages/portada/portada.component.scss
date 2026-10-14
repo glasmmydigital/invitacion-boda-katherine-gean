@@ -19,11 +19,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86); /* Sombra para legibilidad */
   margin-top: -15%;
 }
-@font-face {
-  font-family: Nathalia;
-  src: url("/assets/Nathalia.ttf") format("truetype");
-}
-
 .tituloportada {
   position: absolute;
   width: 100%;
@@ -80,10 +75,10 @@
 }
 
 .ampersand {
-  font-family: Nathalia;
+  font-family: BrittanySignature;
   padding-right: 5%;
   text-transform: none !important;
-  font-size: 90px;
+  font-size: var(--brittany-signature-size);
   color: #ffffff;
   margin: 0;
 }
@@ -139,7 +134,7 @@
 
   .contenedor-conteo {
     background-color: #53582f;
-    color: #f3ead8;
+    color: var(--wedding-yellow);
 
     .textName,
     .ampersand,
@@ -149,7 +144,7 @@
     .green-text,
     .textosec,
     .texto-idioma {
-      color: #f3ead8;
+      color: var(--wedding-yellow);
     }
 
     .cerm-recep-button {
@@ -158,21 +153,21 @@
       justify-content: center;
       min-height: 48px;
       padding: 12px 24px;
-      background-color: #f3ead8;
+      background-color: var(--wedding-yellow);
       color: #53582f;
-      border: 1px solid #f3ead8;
+      border: 1px solid var(--wedding-yellow);
       border-radius: 999px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
       letter-spacing: 1.5px;
 
       &:hover {
-        background-color: #e4d5b9;
-        border-color: #e4d5b9;
+        background-color: var(--wedding-yellow-hover);
+        border-color: var(--wedding-yellow-hover);
         transform: translateY(-2px);
       }
 
       &:focus-visible {
-        outline: 2px solid #f3ead8;
+        outline: 2px solid var(--wedding-yellow);
         outline-offset: 4px;
       }
 
@@ -186,26 +181,6 @@
     //align-items: center; // Centra los elementos
     max-width: 525px; // Asegura el mismo ancho que la imagen
     margin: 0px auto; // Centra horizontalmente y añade margen superior e inferior
-  }
-
-  .titulop {
-    font-family: Nathalia;
-    line-height: 0.7;
-    text-align: center;
-    font-size: 80px;
-    color: #ab9047;
-    margin-top: 0% !important;
-    margin-bottom: 0% !important;
-  }
-
-  .titulop2 {
-    font-family: Nathalia;
-    line-height: 0.7;
-    text-align: center;
-    font-size: 80px;
-    color: #ab9047;
-    margin-top: 0% !important;
-    margin-bottom: 0% !important;
   }
 
   .cerm-recep-button {
@@ -286,10 +261,10 @@
 }
 
 .textoBoda {
-  font-family: "Nathalia";
+  font-family: "BrittanySignature";
   color: #fbfbfb;
   text-align: center;
-  font-size: 50px;
+  font-size: var(--brittany-signature-size);
   margin-right: 0%;
   margin-left: 0%;
 }
@@ -315,7 +290,7 @@
   position: absolute;
   cursor: pointer;
   inset: 0;
-  background: #efe3cf;
+  background: var(--wedding-yellow-soft);
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -353,6 +328,12 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 24px;
+}
+
+.textoT.cover-location {
+  margin: 0;
+  line-height: 1.5;
 }
 
 .textoT {
@@ -378,12 +359,15 @@
 }
 
 .tituloPadres{
-  font-family: "Nathalia";
-    color: #53582f;
-    text-align: center;
-    font-size: 50px;
-    margin-right: 0%;
-    margin-left: 0%;
+  font-family: "BrittanySignature";
+  color: #53582f;
+  text-align: center;
+  font-size: calc(var(--brittany-signature-size) * 0.85);
+  line-height: 1.65;
+  width: 84%;
+  max-width: 440px;
+  margin: 0 auto 24px;
+  text-wrap: balance;
 }
 
 .textoPadresIn {
@@ -493,7 +477,7 @@
   font-size: 40px;
   margin-right: 0%;
   margin-left: 0%;
-  padding-bottom: 6%;
+  margin-bottom: 0;
 }
 
 .green-text {

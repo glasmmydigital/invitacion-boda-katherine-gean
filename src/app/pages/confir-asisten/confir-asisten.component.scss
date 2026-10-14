@@ -5,7 +5,7 @@
 
 .colum-confir-asistencia {
   background-color: #53582f;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -35,11 +35,11 @@
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  background-color: #f3ead8;
+  background-color: var(--wedding-yellow);
   color: #53582f;
   padding: 12px 24px;
   text-decoration: none;
-  border: 1px solid #f3ead8;
+  border: 1px solid var(--wedding-yellow);
   font-weight: bold;
   cursor: pointer;
   border-radius: 999px;
@@ -50,14 +50,14 @@
 }
 
 .confir-asisten-button:hover {
-  background-color: #e4d5b9;
-  border-color: #e4d5b9;
+  background-color: var(--wedding-yellow-hover);
+  border-color: var(--wedding-yellow-hover);
   color: #53582f;
   transform: translateY(-2px);
 }
 
 .confir-asisten-button:focus-visible {
-  outline: 2px solid #f3ead8;
+  outline: 2px solid var(--wedding-yellow);
   outline-offset: 4px;
 }
 
@@ -67,9 +67,9 @@
 
 .titulop {
   font-family: "BrittanySignature";
-  font-size: 65px;
+  font-size: var(--brittany-signature-size);
   line-height: 1.7;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   margin-top: 10%;
   margin-bottom: 5%;
 }
@@ -77,14 +77,14 @@
 .titulo-confir-aistencia {
   font-family: "Playfair Display", serif;
   font-size: 30px;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }
 
 .textSec {
   font-family: "Cormorant", serif;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   font-size: 20px;
   margin-right: 4%;
   margin-left: 4%;

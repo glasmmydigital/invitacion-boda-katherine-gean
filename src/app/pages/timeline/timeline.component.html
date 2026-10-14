@@ -1,107 +1,43 @@
-<div class="contenedor-timeline">
-  <div>
-    <img  class="img-2" src="assets/flor6.png" >
-  </div>
-  <div class="colum-timeline">
-    <div class="colum-timeline-text">
-      <br /><br />
-      <p class="timeline1" data-aos="zoom-in" data-aos-duration="3000">
-        {{ traductorService.getTexto("tituloItinerario1") }}
-        <br />
-      </p>
-    </div>
-    <br /><br />
-    <div class="timeline-container">
-      <div class="timeline-column-left">
-        <div class="event">
-          <img
-            src="assets/iglesia.png"
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-            alt="Ceremonia religiosa"
-          />
-        </div>
-        <div class="event">
-          <img
-            src="assets/brindis.png"
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-            alt="Recepción de invitados"
-          />
-        </div>
-        <div class="event">
-          <img
-            src="assets/anillos-de-boda.png"
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-            alt="Ceremonia civil"
-          />
-        </div>
+<section class="itinerary" aria-labelledby="itinerary-title">
+  <header class="itinerary-header">
+    <h2 id="itinerary-title">{{ traductorService.getTexto("tituloItinerario1") }}</h2>
+  </header>
 
-        <div class="event">
-          <img
-            src="assets/plato.png"
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-            alt="Cena"
-          />
-        </div>
-        <div class="event">
-          <img
-            src="assets/bola-de-disco.png"
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-            alt="Fiesta"
-          />
-        </div>
-        <!--
-        -->
+  <ol class="itinerary-events">
+    <li class="itinerary-event" data-aos="fade-up" data-aos-duration="700">
+      <span class="event-icon"><img src="assets/iglesia.png" alt="" loading="lazy"></span>
+      <div class="event-details">
+        <time class="event-time" datetime="2026-11-28T15:00">3:00 p. m.</time>
+        <h3>Ceremonia religiosa</h3>
       </div>
-
-      <div class="timeline-line">
-        <div class="timeline-point"></div>
-        <div class="timeline-point"></div>
-        <div class="timeline-point"></div>
-        <div class="timeline-point"></div>
-        <div class="timeline-point"></div>
+    </li>
+    <li class="itinerary-event" data-aos="fade-up" data-aos-duration="700">
+      <span class="event-icon"><img src="assets/brindis.png" alt="" loading="lazy"></span>
+      <div class="event-details">
+        <time class="event-time" datetime="2026-11-28T17:00">5:00 p. m.</time>
+        <h3>Recepci&oacute;n de invitados</h3>
       </div>
-
-      <div class="timeline-column-right" data-aos="zoom-in" data-aos-duration="3000">
-        <div class="event">
-          <p class="event-title">Ceremonia religiosa</p>
-          <p class="event-time">3:00 p. m.</p>
-        </div>
-
-        <div class="event" style="cursor: pointer">
-          <a class="event-title">Recepción de invitados</a>
-          <div class="event-time-row">
-            <a class="event-time">5:00 p. m.</a>
-          </div>
-        </div>
-
-        <div class="event" style="cursor: pointer">
-          <a class="event-title">Ceremonia civil</a>
-          <div class="event-time-row">
-            <a class="event-time">5:30 p. m.</a>
-          </div>
-        </div>
-
-        <div class="event" style="cursor: pointer">
-          <a class="event-title">Cena</a>
-          <div class="event-time-row">
-            <a class="event-time">7:00 p. m.</a>
-          </div>
-        </div>
-
-        <div class="event" style="cursor: pointer">
-          <a class="event-title">Fiesta</a>
-          <div class="event-time-row">
-            <a class="event-time">8:00 p. m. – 1:00 a. m.</a>
-          </div>
-        </div>
+    </li>
+    <li class="itinerary-event" data-aos="fade-up" data-aos-duration="700">
+      <span class="event-icon"><img src="assets/anillos-de-boda.png" alt="" loading="lazy"></span>
+      <div class="event-details">
+        <time class="event-time" datetime="2026-11-28T17:30">5:30 p. m.</time>
+        <h3>Ceremonia civil</h3>
       </div>
-    </div>
-    <br /><br />
-
-  </div>
-</div>
+    </li>
+    <li class="itinerary-event" data-aos="fade-up" data-aos-duration="700">
+      <span class="event-icon"><img src="assets/plato.png" alt="" loading="lazy"></span>
+      <div class="event-details">
+        <time class="event-time" datetime="2026-11-28T19:00">7:00 p. m.</time>
+        <h3>Cena</h3>
+      </div>
+    </li>
+    <li class="itinerary-event" data-aos="fade-up" data-aos-duration="700">
+      <span class="event-icon"><img src="assets/bola-de-disco.png" alt="" loading="lazy"></span>
+      <div class="event-details">
+        <p class="event-time"><time datetime="2026-11-28T20:00">8:00 p. m.</time> &ndash; <time datetime="2026-11-29T01:00">1:00 a. m.</time></p>
+        <h3>Fiesta</h3>
+      </div>
+    </li>
+  </ol>
+</section>

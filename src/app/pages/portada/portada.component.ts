@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { TraductorServicio } from '../../Services/traductor.service';
+import { ImgFloresComponent } from '../img-flores/img-flores.component';
 
 @Component({
   selector: 'app-portada',
   standalone: true,
-  imports: [],
+  imports: [ImgFloresComponent],
   templateUrl: './portada.component.html',
   styleUrls: ['./portada.component.scss']
 })

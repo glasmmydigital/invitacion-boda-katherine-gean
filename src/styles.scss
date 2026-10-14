@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "BrittanySignature";
+  src: url("/assets/BrittanySignature.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --brittany-signature-size: clamp(40px, 12vw, 65px);
+  --wedding-yellow: #fff3b7;
+  --wedding-yellow-hover: #f4e49b;
+  --wedding-yellow-soft: #fffbea;
+  --wedding-olive: #53582f;
+}

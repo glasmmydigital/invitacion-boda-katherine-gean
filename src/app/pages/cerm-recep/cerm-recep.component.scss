@@ -71,7 +71,7 @@
   min-height: 48px;
   padding: 12px 28px;
   background-color: #53582f;
-  color: #f3ead8;
+  color: var(--wedding-yellow);
   border: 1px solid #53582f;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(83, 88, 47, 0.18);
@@ -86,7 +86,7 @@
   &:hover {
     background-color: #414624;
     border-color: #414624;
-    color: #f3ead8;
+    color: var(--wedding-yellow);
     box-shadow: 0 6px 16px rgba(83, 88, 47, 0.24);
     transform: translateY(-2px);
     text-decoration: none;

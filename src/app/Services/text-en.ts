@@ -1,6 +1,7 @@
 export const TEXT_EN:{[key: string]: string } = {
   primerTitulo: 'WE MERRIED!',
   tNombres: 'Katherine & Gean',
+  splashClick: 'Open invitation',
   traduccion: 'Translate to Spanish',
   pCancion: 'Your browser does not support the audio element.',
   subTitulo: 'You are invited!',

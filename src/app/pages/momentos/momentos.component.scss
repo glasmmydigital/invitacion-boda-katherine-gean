@@ -35,8 +35,8 @@
 }
 
 .titulo-momen{
-  font-family: Nathalia;
-  font-size: 65px;
+  font-family: BrittanySignature;
+  font-size: var(--brittany-signature-size);
   color: #8a8e75;
   margin-bottom: 0% !important;
 }
@@ -77,8 +77,8 @@
 }
 
 .titulop{
-  font-family:  Nathalia;
-  font-size: 80px;
+  font-family:  BrittanySignature;
+  font-size: var(--brittany-signature-size);
   line-height: 0.5;
   color: #ab9047;
   margin-top: 0% !important;
@@ -88,18 +88,18 @@
 
 @media (min-width: 768px) {
   .titulo-momen{
-    font-size: 80px;
+    font-size: var(--brittany-signature-size);
   }
 }
 
 @media (max-width: 464px) {
   .titulo-momen{
-    font-size: 50px;
+    font-size: var(--brittany-signature-size);
   }
 }
 
 @media (max-width: 370px) {
   .titulo-momen{
-    font-size: 40px;
+    font-size: var(--brittany-signature-size);
   }
 }
