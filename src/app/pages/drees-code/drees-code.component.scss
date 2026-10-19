@@ -4,8 +4,8 @@
 }
 
 .colum-dress-code{
-  background-color: #53582f;
-  color: var(--wedding-yellow);
+  background-color: var(--wedding-yellow);
+  color: var(--wedding-text);
   padding: 36px 5px 24px;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
 }
 
 .textosec{
-  color: var(--wedding-yellow);
+  color: var(--wedding-text);
   font-family: "Cormorant", serif;
   font-size: 20px;
   margin-right: 4%;
@@ -29,7 +29,7 @@
   text-align: center;
   font-size: var(--brittany-signature-size);
   line-height: 1.7;
-  color: var(--wedding-yellow);
+  color: var(--wedding-heading);
   margin: 0 0 12px;
 }
 
@@ -39,8 +39,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: clamp(220px, 60vw, 280px);
-  margin: 16px 0;
+  padding: 18px 0;
+  margin: 10px 0 6px;
   overflow: hidden;
   isolation: isolate;
 }
@@ -48,34 +48,19 @@
 .img-icon{
   position: relative;
   z-index: 1;
-  width: 46%;
-  max-width: 220px;
-}
-
-.dress-flower {
-  position: absolute;
-  bottom: -10px;
-  height: clamp(200px, 55vw, 270px);
-  width: auto;
-  max-width: none;
-  pointer-events: none;
-  user-select: none;
-}
-
-.dress-flower-left {
-  left: -20%;
-}
-
-.dress-flower-right {
-  right: -7%;
-  opacity: 0.85;
+  display: block;
+  width: 50%;
+  max-width: 230px;
+  aspect-ratio: 700 / 440;
+  object-fit: cover;
+  object-position: center 45%;
 }
 
 .titulo-dress {
   font-family: Carentro;
   font-weight: bold;
   font-size: 25px;
-  color: var(--wedding-yellow);
+  color: var(--wedding-text);
   margin: 10px 0;
   letter-spacing: 1px;
 }
@@ -85,13 +70,17 @@
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 8px;
   /* margin: 20px 0 4% 4%;*/
 }
 
 .dress-cont {
   text-align: center;
-  color: var(--wedding-yellow);
+  color: var(--wedding-text);
+}
+
+.container-dress-code {
+  margin-top: 22px;
 }
 
 .titulo-genero {
@@ -115,8 +104,8 @@
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  background-color: var(--wedding-yellow);
-  color: #53582f;
+  background-color: var(--wedding-olive);
+  color: var(--wedding-text);
   border: 1px solid var(--wedding-yellow);
   text-decoration: none;
   padding: 10px 22px;
@@ -133,7 +122,7 @@
 .btn-dress-code:hover {
   background-color: var(--wedding-yellow-hover);
   border-color: var(--wedding-yellow-hover);
-  color: #53582f;
+  color: var(--wedding-text);
   transform: translateY(-2px);
 }
 
@@ -148,9 +137,13 @@
 
 .divisor {
   width: 3px;
-  background-color: rgba(255, 243, 183, 0.4);
+  background-color: rgba(111, 128, 92, 0.3);
   min-height: 100px;
   margin-top: 10px;
 }
 
 
+
+.img-icon {
+  filter: var(--wedding-icon-filter);
+}

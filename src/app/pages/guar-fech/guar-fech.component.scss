@@ -13,12 +13,31 @@
 }
 
 .agregar-btn{
+  display: inline-flex;
   align-items: center;
-  background-color: #c6c6c652;
-  color: #53582f;
-  padding: 10px 20px;
+  justify-content: center;
+  min-height: 48px;
+  background-color: var(--wedding-button);
+  color: var(--wedding-text);
+  padding: 12px 24px;
+  border: 1px solid var(--wedding-button-border);
+  box-shadow: 0 4px 12px rgba(121, 98, 71, 0.1);
   //font-weight: bold;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 999px;
   font-family: "Cormorant", serif;
+  transition: background-color 0.2s ease;
+}
+
+.agregar-btn:hover {
+  background-color: var(--wedding-button-hover);
+}
+
+.agregar-btn svg {
+  color: var(--wedding-icon);
+}
+
+.agregar-btn:focus-visible {
+  outline: 2px solid var(--wedding-text);
+  outline-offset: 4px;
 }

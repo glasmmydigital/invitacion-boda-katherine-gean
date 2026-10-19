@@ -4,8 +4,8 @@
 }
 
 .colum-confir-asistencia {
-  background-color: #53582f;
-  color: var(--wedding-yellow);
+  background-color: var(--wedding-yellow-soft);
+  color: var(--wedding-text);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -35,29 +35,29 @@
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  background-color: var(--wedding-yellow);
-  color: #53582f;
+  background-color: var(--wedding-button);
+  color: var(--wedding-text);
   padding: 12px 24px;
   text-decoration: none;
-  border: 1px solid var(--wedding-yellow);
+  border: 1px solid var(--wedding-button-border);
   font-weight: bold;
   cursor: pointer;
   border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(121, 98, 71, 0.1);
   letter-spacing: 1.5px;
   font-family: "Cormorant", serif;
   transition: all 0.3s ease;
 }
 
 .confir-asisten-button:hover {
-  background-color: var(--wedding-yellow-hover);
-  border-color: var(--wedding-yellow-hover);
-  color: #53582f;
+  background-color: var(--wedding-button-hover);
+  border-color: var(--wedding-button-border);
+  color: var(--wedding-text);
   transform: translateY(-2px);
 }
 
 .confir-asisten-button:focus-visible {
-  outline: 2px solid var(--wedding-yellow);
+  outline: 2px solid var(--wedding-text);
   outline-offset: 4px;
 }
 
@@ -69,7 +69,7 @@
   font-family: "BrittanySignature";
   font-size: var(--brittany-signature-size);
   line-height: 1.7;
-  color: var(--wedding-yellow);
+  color: var(--wedding-heading);
   margin-top: 10%;
   margin-bottom: 5%;
 }
@@ -77,14 +77,14 @@
 .titulo-confir-aistencia {
   font-family: "Playfair Display", serif;
   font-size: 30px;
-  color: var(--wedding-yellow);
+  color: var(--wedding-text);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }
 
 .textSec {
   font-family: "Cormorant", serif;
-  color: var(--wedding-yellow);
+  color: var(--wedding-text);
   font-size: 20px;
   margin-right: 4%;
   margin-left: 4%;

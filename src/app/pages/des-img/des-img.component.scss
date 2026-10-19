@@ -63,7 +63,7 @@
   font-family:  "BrittanySignature";
   font-size: var(--brittany-signature-size);
   line-height: 1.5;
-  color: #53582f;
+  color: var(--wedding-heading);
   padding: 3% 4%;
   margin-top: 0% !important;
   margin-bottom: 0% !important;
@@ -72,7 +72,7 @@
 .nom-pareja{
   font-family: "Cormorant", serif;
   font-size: 30px;
-  color: #222222;
+  color: var(--wedding-text);
   margin-top: 0%;
   margin-bottom: 0%;
 }

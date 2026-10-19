@@ -14,27 +14,27 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
-  min-height: clamp(220px, 58vw, 270px);
-  padding: 24px 27%;
+  min-height: clamp(280px, 78vw, 360px);
+  padding: 24px 30%;
 }
 
 .cover-flower {
   position: absolute;
-  bottom: -12px;
+  bottom: 0;
   z-index: 0;
-  height: calc(100% - 24px);
-  max-height: 260px;
+  height: calc(100% - 16px);
+  max-height: 350px;
   width: auto;
   max-width: none;
   pointer-events: none;
   user-select: none;
+  filter: none;
 }
 
 .cover-flower-left {
-  left: -19%;
+  left: -3%;
 }
 
 .cover-flower-right {
-  right: -7%;
-  opacity: 0.85;
+  right: -3%;
 }

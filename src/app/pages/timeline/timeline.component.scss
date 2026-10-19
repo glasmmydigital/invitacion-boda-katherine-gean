@@ -6,8 +6,9 @@
   max-width: 525px;
   margin: 0 auto;
   padding: 54px clamp(22px, 7vw, 42px) 58px;
-  color: var(--wedding-olive);
-  background: linear-gradient(180deg, #fff 0%, var(--wedding-yellow-soft) 22%, var(--wedding-yellow-soft) 80%, #fff 100%);
+  padding-right: 8px;
+  color: var(--wedding-text);
+  background: var(--wedding-yellow-soft);
 }
 
 .itinerary-header {
@@ -23,6 +24,7 @@
   letter-spacing: 2px;
   line-height: 1.2;
   text-transform: uppercase;
+  color: var(--wedding-heading);
 }
 
 .itinerary-events {
@@ -31,22 +33,45 @@
   list-style: none;
 }
 
+.itinerary-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(100px, 30vw, 152px);
+  gap: 14px;
+  align-items: center;
+}
+
+.itinerary-floral {
+  position: relative;
+  min-width: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.itinerary-floral img {
+  display: block;
+  width: 140%;
+  max-width: none;
+  height: auto;
+  margin-left: -40%;
+  filter: none;
+}
+
 .itinerary-event {
   position: relative;
   display: grid;
-  grid-template-columns: 68px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 14px;
   align-items: center;
   padding-bottom: 28px;
 
   &:not(:last-child)::before {
     content: "";
     position: absolute;
-    top: 68px;
+    top: 56px;
     bottom: 0;
-    left: 33px;
+    left: 27px;
     width: 1px;
-    background: rgba(83, 88, 47, 0.24);
+    background: rgba(111, 128, 92, 0.24);
   }
 
   &:last-child {
@@ -59,11 +84,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 68px;
-  height: 68px;
+  width: 56px;
+  height: 56px;
   border: 1px solid rgba(83, 88, 47, 0.14);
   border-radius: 50%;
-  background: var(--wedding-yellow);
+  background: var(--wedding-ivory);
 }
 
 .event-icon img {
@@ -95,9 +120,38 @@
   text-wrap: balance;
 }
 
+.event-time time {
+  white-space: nowrap;
+}
+
 @media (max-width: 360px) {
+  .itinerary {
+    padding-left: 18px;
+    padding-right: 6px;
+  }
+
+  .itinerary-body {
+    gap: 12px;
+  }
+
   .itinerary-event {
-    gap: 16px;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+
+    &:not(:last-child)::before {
+      top: 48px;
+      left: 23px;
+    }
+  }
+
+  .event-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .event-icon img {
+    width: 30px;
+    height: 30px;
   }
 
   .event-details h3 {
@@ -111,4 +165,12 @@
     transform: none !important;
     transition: none !important;
   }
+}
+
+.event-time {
+  color: var(--wedding-text);
+}
+
+.event-icon img {
+  filter: var(--wedding-icon-filter);
 }

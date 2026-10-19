@@ -23,14 +23,14 @@
     margin-left: 7%;
     margin-top: 0%;
     margin-bottom: 0%;
-    color: #53582f;
+    color: var(--wedding-text);
 }
 
 .titulo-momen{
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   font-size: 40px;
-  color: #53582f;
+  color: var(--wedding-heading);
   margin-bottom: 0% !important;
 }
 
@@ -38,7 +38,7 @@
   font-family: BrittanySignature;
   font-style: italic;
   font-size: var(--brittany-signature-size);
-  color: #cba161;
+  color: var(--wedding-text);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }
@@ -48,7 +48,7 @@
     font-family: BrittanySignature;
     font-size: var(--brittany-signature-size);
     margin-bottom: 0;
-    color: #cba161;
+    color: var(--wedding-text);
     margin-top: 0% !important;
     margin-bottom: 0% !important;
   }
@@ -58,7 +58,7 @@
     font-family: BrittanySignature;
     font-size: var(--brittany-signature-size);
     margin-bottom: 0;
-    color: #cba161;
+    color: var(--wedding-text);
     margin-top: 0% !important;
     margin-bottom: 0% !important;
   }

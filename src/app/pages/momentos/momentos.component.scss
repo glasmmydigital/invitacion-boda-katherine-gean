@@ -37,7 +37,7 @@
 .titulo-momen{
   font-family: BrittanySignature;
   font-size: var(--brittany-signature-size);
-  color: #8a8e75;
+  color: var(--wedding-text);
   margin-bottom: 0% !important;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .confir-asisten-button{
-  background-color: #8a8e75;
+  background-color: var(--wedding-green);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -80,7 +80,7 @@
   font-family:  BrittanySignature;
   font-size: var(--brittany-signature-size);
   line-height: 0.5;
-  color: #ab9047;
+  color: var(--wedding-text);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }

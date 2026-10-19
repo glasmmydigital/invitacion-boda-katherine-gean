@@ -40,7 +40,7 @@
 
 .solofaltan {
   font-family: "Playfair Display", serif;
-  color: #53582f; /* Cambia el color según el contraste necesario */
+  color: var(--wedding-text); /* Cambia el color según el contraste necesario */
   font-size: 40px;
   margin-top: 0% !important;
   margin-bottom: 0% !important;
@@ -51,46 +51,60 @@
 }
 
 .container-reg {
-  margin-top: 15%;
+  margin-top: 12%;
+  padding-inline: 20px;
 }
 
 .textName {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   text-align: center;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 60px;
+  font-family: "Cormorant", serif;
+  font-size: clamp(42px, 12vw, 60px);
   font-weight: 400;
-  letter-spacing: 2px;
-  color: #ffffff; /* tono gris-azulado */
-  line-height: 1.2;
+  letter-spacing: 0.09em;
+  color: var(--wedding-heading);
+  line-height: 1.1;
 }
 
-.name1 {
-  text-transform: uppercase;
-}
+.name1,
 .name2 {
   margin: 0;
-  padding-left: 5%;
+  padding: 0;
   text-transform: uppercase;
+}
+
+.name-divider {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  letter-spacing: 0;
+}
+
+.name-divider::before,
+.name-divider::after {
+  content: "";
+  width: clamp(32px, 10vw, 48px);
+  height: 1px;
+  background: currentColor;
+  opacity: 0.4;
 }
 
 .ampersand {
-  font-family: BrittanySignature;
-  padding-right: 5%;
+  font-family: "Cormorant", serif;
+  font-style: italic;
   text-transform: none !important;
-  font-size: var(--brittany-signature-size);
-  color: #ffffff;
+  font-size: 0.75em;
+  color: inherit;
   margin: 0;
-}
-
-@media (max-width: 500px) {
-  .ampersand {
-    left: 77%;
-  }
+  line-height: 1;
 }
 
 .contenedor-portada {
-  background-color: #ffffff;
+  background-color: var(--wedding-ivory);
   position: relative;
   text-align: center;
 
@@ -118,7 +132,7 @@
     }
 
     .testasinvitado {
-      color: #819aab;
+      color: var(--wedding-text);
       font-size: 20px;
     }
 
@@ -133,67 +147,14 @@
   }
 
   .contenedor-conteo {
-    background-color: #53582f;
-    color: var(--wedding-yellow);
-
-    .textName,
-    .ampersand,
-    .textoT,
-    .textosecf,
-    .textoBoda,
-    .green-text,
-    .textosec,
-    .texto-idioma {
-      color: var(--wedding-yellow);
-    }
-
-    .cerm-recep-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 12px 24px;
-      background-color: var(--wedding-yellow);
-      color: #53582f;
-      border: 1px solid var(--wedding-yellow);
-      border-radius: 999px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-      letter-spacing: 1.5px;
-
-      &:hover {
-        background-color: var(--wedding-yellow-hover);
-        border-color: var(--wedding-yellow-hover);
-        transform: translateY(-2px);
-      }
-
-      &:focus-visible {
-        outline: 2px solid var(--wedding-yellow);
-        outline-offset: 4px;
-      }
-
-      &:active {
-        transform: translateY(0);
-      }
-    }
+    background-color: var(--wedding-yellow);
+    color: var(--wedding-text);
     //padding: 20px; // Agrega padding
     display: flex; // Usar flexbox para alinear elementos
     flex-direction: column; // Dirección de los elementos en columna
     //align-items: center; // Centra los elementos
     max-width: 525px; // Asegura el mismo ancho que la imagen
     margin: 0px auto; // Centra horizontalmente y añade margen superior e inferior
-  }
-
-  .cerm-recep-button {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px 45px;
-    text-decoration: none;
-    border: 2px solid;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 20px;
-    font-family: "Cormorant", serif;
-    transition: all 0.3s ease; /* Transición para un efecto más suave */
   }
 
   .textosec {
@@ -254,7 +215,7 @@
     }
 
     .testasinvitado {
-      color: #819aab;
+      color: var(--wedding-text);
       font-size: 30px;
     }
   }
@@ -262,7 +223,7 @@
 
 .textoBoda {
   font-family: "BrittanySignature";
-  color: #fbfbfb;
+  color: var(--wedding-heading);
   text-align: center;
   font-size: var(--brittany-signature-size);
   margin-right: 0%;
@@ -311,11 +272,11 @@
 }
 
 .switch input:checked + .slider {
-  background: #ab9047;
+  background: var(--wedding-olive);
 }
 
 .switch input:focus + .slider {
-  box-shadow: 0 0 1px #ab9047;
+  box-shadow: 0 0 1px var(--wedding-olive);
 }
 
 .switch input:checked + .slider:before {
@@ -338,7 +299,7 @@
 
 .textoT {
   font-family: "Cormorant", serif;
-  color: rgb(255, 255, 255);
+  color: var(--wedding-text);
   margin: 1% 5% 5% 5%;
   text-align: center;
   font-weight: 400;
@@ -349,7 +310,7 @@
 
 .textoTt {
   font-family: "Cormorant", serif;
-  color: #53582f;
+  color: var(--wedding-text);
   margin: 1% 5% 5% 5%;
   text-align: center;
   font-weight: 400;
@@ -360,7 +321,7 @@
 
 .tituloPadres{
   font-family: "BrittanySignature";
-  color: #53582f;
+  color: var(--wedding-heading);
   text-align: center;
   font-size: calc(var(--brittany-signature-size) * 0.85);
   line-height: 1.65;
@@ -372,7 +333,7 @@
 
 .textoPadresIn {
   font-family: "Cormorant", serif;
-  color: #53582f;
+  color: var(--wedding-text);
   margin-bottom: 4%;
   text-align: center;
   font-weight: 500;
@@ -426,7 +387,7 @@
 
 .linea-vertical {
   width: 3px;
-  background-color: #ffffff;
+  background-color: var(--wedding-ivory);
   min-height: 100px;
   margin: 0;
 }
@@ -472,7 +433,7 @@
 
 .textosecf {
   font-family: "Playfair Display", serif;
-  color: #fbfbfb;
+  color: var(--wedding-text);
   text-align: center;
   font-size: 40px;
   margin-right: 0%;
@@ -481,7 +442,7 @@
 }
 
 .green-text {
-  color: #ffffff;
+  color: var(--wedding-text);
 }
 
 .img-pareja {
@@ -527,7 +488,7 @@
     top: 12%;
     font-size: 2.5rem;
     align-items: center;
-    color: #53582f;
+    color: var(--wedding-text);
   }
 
   &:last-child::after {
@@ -539,14 +500,14 @@
   font-family: "Cormorant", serif;
   font-size: 2.5rem; /* Tamaño reducido del número */
   font-style: normal;
-  color: #53582f; /* Color más fuerte */
+  color: var(--wedding-text); /* Color más fuerte */
 }
 
 .etiqueta {
   font-size: 1.1rem; /* Tamaño de la etiqueta */
   font-family: "Playfair Display", serif;
   font-style: normal;
-  color: #53582f; /* Color más fuerte */
+  color: var(--wedding-text); /* Color más fuerte */
   margin-top: 5px;
 }
 
@@ -559,6 +520,7 @@
     width: 0.8em;
     height: 1em;
     object-fit: contain;
+    filter: var(--wedding-icon-filter);
   }
 }
 
@@ -576,4 +538,8 @@
     width: 90px;
     height: 110px;
   }
+}
+
+.location-icon {
+  filter: var(--wedding-icon-filter);
 }

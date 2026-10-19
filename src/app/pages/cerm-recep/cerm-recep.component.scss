@@ -26,7 +26,7 @@
 
 .textosec {
   font-family: "Cormorant", serif;
-  color: #53582f;
+  color: var(--wedding-text);
   text-align: center;
   font-weight: 400;
   font-size: 20px;
@@ -35,7 +35,7 @@
 
 .hora {
   font-family: "Cormorant", serif;
-  color: #53582f;
+  color: var(--wedding-text);
   text-align: center;
   font-weight: 400;
   font-size: 28px;
@@ -49,7 +49,7 @@
   text-align: center;
   font-size: 40px;
   line-height: 1.7;
-  color: #53582f;
+  color: var(--wedding-heading);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }
@@ -59,7 +59,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 30px;
-  color: #809eae;
+  color: var(--wedding-text);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }
@@ -70,11 +70,11 @@
   justify-content: center;
   min-height: 48px;
   padding: 12px 28px;
-  background-color: #53582f;
-  color: var(--wedding-yellow);
-  border: 1px solid #53582f;
+  background-color: var(--wedding-button);
+  color: var(--wedding-text);
+  border: 1px solid var(--wedding-button-border);
   border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(83, 88, 47, 0.18);
+  box-shadow: 0 4px 12px rgba(121, 98, 71, 0.1);
   font-family: "Cormorant", serif;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -84,16 +84,16 @@
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 
   &:hover {
-    background-color: #414624;
-    border-color: #414624;
-    color: var(--wedding-yellow);
-    box-shadow: 0 6px 16px rgba(83, 88, 47, 0.24);
+    background-color: var(--wedding-button-hover);
+    border-color: var(--wedding-button-border);
+    color: var(--wedding-text);
+    box-shadow: 0 6px 16px rgba(121, 98, 71, 0.14);
     transform: translateY(-2px);
     text-decoration: none;
   }
 
   &:focus-visible {
-    outline: 2px solid #53582f;
+    outline: 2px solid var(--wedding-text);
     outline-offset: 4px;
   }
 
@@ -105,4 +105,18 @@
 .img-icon {
   width: 25%;
   margin-bottom: 5%;
+}
+
+.img-icon {
+  filter: var(--wedding-icon-filter);
+}
+
+.reception-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 4px 0 24px;
+  border: 1px solid var(--wedding-button-border);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(121, 98, 71, 0.1);
 }

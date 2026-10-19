@@ -24,7 +24,7 @@
   margin-left: 7%;
   margin-top: 0%;
   margin-bottom: 0%;
-  color: #53582f;
+  color: var(--wedding-text);
 }
 
 .titulop {
@@ -32,13 +32,13 @@
   text-transform: uppercase;
   font-size: 40px;
   line-height: 1.7;
-  color: #53582f;
+  color: var(--wedding-heading);
   margin-top: 0% !important;
   margin-bottom: 0% !important;
 }
 
 .numeroRegalo {
-  color: #53582f;
+  color: var(--wedding-text);
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@
 
 .container-reg {
   width: 100%;
-  color: #53582f;
+  color: var(--wedding-text);
 }
 
 .transfer-title {
@@ -82,9 +82,9 @@
 .payment-card {
   margin-top: 14px;
   padding: 22px 16px;
-  border: 1px solid rgba(75, 104, 122, 0.18);
+  border: 1px solid rgba(111, 128, 92, 0.18);
   border-radius: 16px;
-  background: #f5f8fa;
+  background: var(--wedding-yellow);
 }
 
 .payment-badge {
@@ -92,7 +92,7 @@
   padding: 5px 16px;
   border-radius: 20px;
   background: var(--wedding-yellow);
-  color: var(--wedding-olive);
+  color: var(--wedding-text);
   font-family: "Quicksand", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -134,7 +134,7 @@
 .payment-cci {
   margin-top: 18px;
   padding-top: 16px;
-  border-top: 1px solid rgba(75, 104, 122, 0.18);
+  border-top: 1px solid rgba(111, 128, 92, 0.18);
 }
 
 .payment-number-cci {
@@ -148,11 +148,11 @@
   justify-content: center;
   min-height: 48px;
   padding: 12px 28px;
-  background-color: #53582f;
-  color: var(--wedding-yellow);
-  border: 1px solid #53582f;
+  background-color: var(--wedding-button);
+  color: var(--wedding-text);
+  border: 1px solid var(--wedding-button-border);
   border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(83, 88, 47, 0.18);
+  box-shadow: 0 4px 12px rgba(121, 98, 71, 0.1);
   font-family: "Cormorant", serif;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -162,16 +162,16 @@
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 
   &:hover {
-    background-color: #414624;
-    border-color: #414624;
-    color: var(--wedding-yellow);
-    box-shadow: 0 6px 16px rgba(83, 88, 47, 0.24);
+    background-color: var(--wedding-button-hover);
+    border-color: var(--wedding-button-border);
+    color: var(--wedding-text);
+    box-shadow: 0 6px 16px rgba(121, 98, 71, 0.14);
     transform: translateY(-2px);
     text-decoration: none;
   }
 
   &:focus-visible {
-    outline: 2px solid #53582f;
+    outline: 2px solid var(--wedding-text);
     outline-offset: 4px;
   }
 
@@ -188,7 +188,16 @@
 .card {
   width: 100%;
   padding: clamp(16px, 5vw, 28px);
-  border: 1px solid rgba(75, 104, 122, 0.15);
+  border: 1px solid rgba(111, 128, 92, 0.15);
   border-radius: 22px;
-  box-shadow: 0 8px 28px rgba(75, 104, 122, 0.08);
+  box-shadow: 0 8px 28px rgba(111, 128, 92, 0.08);
+}
+
+.card {
+  background: var(--wedding-yellow-soft);
+}
+
+.img-icon,
+.img-icon-reg {
+  filter: var(--wedding-icon-filter);
 }

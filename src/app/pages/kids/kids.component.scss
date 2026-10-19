@@ -8,8 +8,8 @@
   padding-bottom: 5%;
   display: flex;
   flex-direction: column;
-  background-color: #53582f;
-  color: var(--wedding-yellow);
+  background-color: var(--wedding-yellow);
+  color: var(--wedding-text);
   align-items: center;
   max-width: 525px;
   margin: 0px auto;
@@ -33,7 +33,7 @@
   font-family: "BrittanySignature";
   font-size: var(--brittany-signature-size);
   line-height: 1.7;
-  color: var(--wedding-yellow);
+  color: var(--wedding-heading);
   margin-top: 10%;
   margin-bottom: 5%;
 }

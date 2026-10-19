@@ -25,7 +25,7 @@ export const TEXT_EN:{[key: string]: string } = {
   guardaFecha: 'Save the date',
   // CEREMONIA Y RECEPCIÓN
   tituloCeremonia: 'CEREMONY AND RECEPTION',
-  direccionCeremonia: 'Iglesia Nuestra Señora Vírgen del Carmen',
+  direccionCeremonia: 'Iglesia Nuestra Señora Virgen del Carmen',
   horaCeremonia: 'Time: 3:00 P.M.',
   ubicacion: 'See Location',
   tituloRecepcion: 'RECEPTION',

@@ -6,9 +6,9 @@
   max-width: 525px;
   margin: 0 auto;
   padding: 32px 24px calc(42px + env(safe-area-inset-bottom, 0px));
-  color: var(--wedding-olive);
+  color: var(--wedding-text);
   text-align: center;
-  background: var(--wedding-yellow-soft);
+  background: var(--wedding-yellow);
 }
 
 .creator-divider {
@@ -22,7 +22,7 @@
 .creator-divider span {
   width: 58px;
   height: 1px;
-  background: rgba(83, 88, 47, 0.24);
+  background: rgba(111, 128, 92, 0.24);
 }
 
 .creator-divider svg {
@@ -47,7 +47,7 @@
   gap: 10px;
   min-height: 44px;
   padding: 4px 8px;
-  color: var(--wedding-olive);
+  color: var(--wedding-text);
   font-family: "Cormorant", serif;
   font-size: 30px;
   font-weight: 500;
@@ -69,4 +69,10 @@
 .creator-brand svg {
   width: 17px;
   height: 17px;
+  color: var(--wedding-icon);
+}
+
+.creator-divider svg {
+  color: var(--wedding-icon);
+  fill: var(--wedding-yellow);
 }
